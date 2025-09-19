@@ -1,0 +1,25 @@
+{
+  "name": "Keep Awake Controller",
+  "description": "Project keep-awake: prevent display sleep with Chrome power API and fallbacks.",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Keep Awake"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "power",
+    "storage",
+    "alarms",
+    "scripting",
+    "activeTab"
+  ]
+}
